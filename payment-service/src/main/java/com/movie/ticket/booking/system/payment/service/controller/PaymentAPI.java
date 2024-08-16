@@ -9,7 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class PaymentAPI {
 
     @GetMapping
-    public String test () {
+    public String test() {
         return "Payment Successfull";
     }
+
+    @GetMapping("/edit")
+    public String edit() {
+        return "edit is exuted";
+    }
+
 }
